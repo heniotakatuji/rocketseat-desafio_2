@@ -1,0 +1,19 @@
+<div class="content">
+  <strong>Meus Agendamentos</strong>
+  <ul class="providers">
+    {% for appointment in appointments %}
+    <li class="provider">
+      <div>
+        {{ moment(appointment.date).format("DD/MM/YYYY HH:mm") }} -
+        {{ appointment.User.name }}
+      </div>
+    </li>
+    {% endfor %} {% if appointments.length === 0 %}
+    <li class="provider">
+      <div>
+        Nenhum agendamento
+      </div>
+    </li>
+    {% endif %}
+  </ul>
+</div>

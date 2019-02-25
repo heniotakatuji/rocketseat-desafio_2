@@ -2090,7 +2090,7 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   dependencies:
     minimist "0.0.8"
 
-moment-timezone@^0.5.14:
+moment-timezone@^0.5.14, moment-timezone@^0.5.17:
   version "0.5.23"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.23.tgz#7cbb00db2c14c71b19303cb47b0fb0a6d8651463"
   integrity sha512-WHFH85DkCfiNMDX5D3X7hpNH3/PUhjTGcD0U1SgfBGZxJ3qUmJh5FdvaFjcClxOvB3rzdfj4oRffbI38jEnC1w==
@@ -2306,6 +2306,13 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
+
+nunjucks-moment-timezone-filter@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/nunjucks-moment-timezone-filter/-/nunjucks-moment-timezone-filter-1.0.1.tgz#d087404080686d17c31ac4a72e52d000a04c28ce"
+  integrity sha512-mP4B3K8qFPn+q18TiLvz6tWAsiHagyCqtEeyBP0vHPd3dsJtjf5OOB44cH2yOQO1VTQHzIqWaH1Oewb2hRnz3w==
+  dependencies:
+    moment-timezone "^0.5.17"
 
 nunjucks@^3.1.7:
   version "3.1.7"

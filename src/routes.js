@@ -8,7 +8,7 @@ const UserController = require('./app/controllers/UserController')
 
 const authMiddleware = require('./app/middlewares/auth')
 const guestMiddleware = require('./app/middlewares/guest')
-const Dashboard = require('./app/controllers/DashboardController')
+const DashboardController = require('./app/controllers/DashboardController')
 const FileController = require('./app/controllers/FileController')
 const AppointmentsController = require('./app/controllers/AppointmentsController')
 const AvailableController = require('./app/controllers/AvailableController')
@@ -34,7 +34,7 @@ routes.post(
 routes.use('/app', authMiddleware)
 routes.use('/app/logout', SessionController.destroy)
 
-routes.get('/app/dashboard', Dashboard.index)
+routes.get('/app/dashboard', DashboardController.index)
 
 routes.get('/files/:file', FileController.show)
 
